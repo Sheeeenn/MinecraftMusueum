@@ -1,0 +1,45 @@
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minecraft Museum</title>
+        <link rel="icon" href="Assets/Minecraft-logo-menu.png" type="image/x-icon">
+        <link rel="stylesheet" href="landingpage.css" type="text/css">
+        
+    </head>
+
+    <body>
+        <div class="banner">
+            <img src="Assets/minecraft-4k.jpg" class="minecraft-gif" alt="Minecraft-Logo">
+            <img src="Assets/Minecraft-logo.png" class="minecraft-logo" alt="Minecraft-Logo">
+            <div class="buttons">
+                <a href="index.html"><div class="button1"><h1>Visit Now</h1></div></a>
+                <a href="https://www.minecraft.net/en-us" target="_blank"><div class="button2"><h1>Play</h1></div></a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <script type="module">
+            import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+          
+            const widget = await Chatbox.initBubble({
+              agentId: 'cm09ej6bx03mzvce65wxbz6cp',
+            });
+          
+            // open the chat bubble
+            widget.open();
+          
+            // close the chat bubble
+            widget.close()
+          
+            // or 
+            widget.toggle()
+          </script>
+
+    </body>
+</html>

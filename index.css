@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    background-color: rgb(243, 243, 243);
+
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url(Assets/minecraft/Minecraft.ttf);
+}
+
+.banner {
+    background: linear-gradient(to right, yellow, green);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(40px);
+    position: relative;
+    margin-bottom: 65px;
+}
+
+.logo-banner {
+    width: 90%;
+    grid-column: 5 / span 11 ;
+    filter: drop-shadow(black 2px 2px 5px);
+    animation: animin 3s forwards; 
+}
+
+.steve-banner {
+    position: absolute;
+    left: 0;
+    width: 36%;
+    filter: drop-shadow(black 2px 2px 5px);
+    animation: steve 2s forwards; 
+    z-index: 10;
+}
+
+.text-banner {
+    position: absolute;
+    border: 3px solid rgba(97, 88, 69, .7);
+    bottom: 80;
+    left: 580px;
+    height: 39%;
+    width: 18.4%;
+    box-shadow: black 2px 2px 5px;
+    animation: animin2 3s forwards; 
+    z-index: 11;
+} 
+
+.text-float {
+    position: absolute;
+    font-size: 210%;
+    font-family: minecraft;
+    text-align: center;
+    text-shadow: white .5px 1px 3px;
+}
+
+.sign1 {
+    height: 30%;
+    width: 100%;
+    background-color: rgb(173, 146, 111);
+}
+
+.sign2 {
+    height: 5%;
+    width: 100%;
+    background-color: rgb(156, 130, 95);
+}
+
+/*SECTION 1*/
+
+.section-1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.section-1-title {
+    grid-column: 10 / span 11;
+    grid-row: 2;
+    animation: animin3 2s forwards; 
+}
+
+.section-1-title p {
+    font-family: minecraft;
+    font-size: 52px;
+    color: black;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    text-shadow: rgb(119, 118, 118) 2px 2px 4px;
+}
+
+.section-1-subtitle {
+    grid-column: span 11;
+    grid-row: 3;
+    animation: animin3 4s forwards; 
+}
+
+.section-1-subtitle p {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.section-1-img {
+    grid-column: 2 / span 10;
+    grid-row: 4;
+    width: 100%;
+    border: 4px solid black;
+    box-shadow: rgb(105, 105, 105) 4px 4px 5px;
+    margin-bottom: 10px;
+    animation: animin2 2s forwards; 
+}
+
+.section-1-content {
+    grid-column: 2 / span 10;
+    grid-row: 5;
+}
+
+.section-1-content p {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: justify;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    grid-column: 2 / span 10 ;
+    grid-row: 6;
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Merge borders */
+    margin: 20px 0; /* Margin around the table */
+    font-size: 18px; /* Font size for the table text */
+    text-align: left; /* Align text to the left */
+    box-shadow: rgb(126, 125, 125) 2px 2px 5px;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Border around each cell */
+    padding: 12px; /* Padding inside each cell */
+}
+
+th {
+    font-weight: bold; /* Bold text for headers */
+    font-family: sans-serif;
+    background-color: green;
+    color: #ddd;
+}
+
+td {
+    font-family: sans-serif;
+}
+
+/* Zebra striping for rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #e0e0e0; /* Darker gray when hovering */
+}
+
+.test {
+    background-color: #ddd;
+}
+
+/* SECTION 2 */
+
+.section-2-title {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(20px);
+    font-family: minecraft;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+.left-s {
+    grid-column: 2 / span 5;
+}
+
+.right-s {
+    grid-column: 7 / span 9;
+}
+
+.left-s p, .right-s p {
+    margin-bottom: 2px;
+}
+
+
+.section-2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 60px;
+}
+
+.chaindesk-unmain{
+    grid-column: 2 / span 5;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%; /* Adjust to your desired width */
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 600px;
+    height: 600px;
+    margin: 0 10px; 
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the container */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.chaindesk-main {
+    grid-column: 7 / span 9;
+}
+
+
+
+@keyframes steve {
+    0% {
+        transform: translate(-80px, 80px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes animin {
+    0% {
+        transform: translate(-80px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes animin2 {
+    0% {
+        transform: translate(0, 80px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes animin3 {
+    0% {
+        transform: translate(80px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}

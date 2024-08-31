@@ -1,0 +1,129 @@
+<html>
+
+    <head>
+        <title>Minecraft Museum</title>
+        <link rel="icon" href="Assets/Minecraft-logo-menu.png" type="image/x-icon">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        
+    </head>
+
+    <body>
+
+        <div class="banner">
+            <img src="Assets/Minecraft-logo.png" alt="Logo-MM" class="logo-banner">
+            <img src="Assets/steve.png" alt="Steve-Image" class="steve-banner">
+            <div class="text-banner">
+                <p class="text-float">Welcome, Player! Let me take you on a tour.</p>
+                <div class="sign1"></div>
+                <div class="sign2"></div>
+                <div class="sign1"></div>
+                <div class="sign2"></div>
+                <div class="sign1"></div>
+            </div>
+        </div>
+
+        <div class="section-1">
+            <div class="section-1-title"><p>What's New?</p></div>
+            <div class="section-1-subtitle"><p>Minecraft 1.20 "Trails & Tales" Update</p></div>
+            <img src="Assets/contents/minecraft1.20-update.jpg" alt="Section-1-image" class="section-1-img">
+            <div class="section-1-content"><p>Brings a wealth of new features, biomes, mobs, and blocks that enhance the overall gameplay experience. Here are some of the most exciting additions:</p></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>New Biomes</th>
+                        <th>New Mobs</th>
+                        <th>New Blocks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cherry Blossom Biome</td>
+                        <td>Sniffer</td>
+                        <td>Bamboo Wood</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Chiseled Bookshelves</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Hanging Signs</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="section-2-title">
+            <div class="left-s"> <p>Discover Our Games</p></div>
+            <div class="right-s"> <p>Search Now</p></div>
+        </div>
+
+        <div class="section-2">
+            <div class="chaindesk-unmain">
+
+                <div class="carousel-container">
+                    <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+                    
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="Assets/contents/M1.jpg" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/contents/M2.jpeg" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/contents/M3.jpg" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/contents/m4.jpg" alt="Image 4">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="chaindesk-main">
+                <iframe
+                src="https://app.chaindesk.ai/agents/cm09ej6bx03mzvce65wxbz6cp/iframe"
+                width="83%"
+                height="100%"
+                frameBorder="0"
+                allow="clipboard-write"
+                style="background-color: transparent;"
+                ></iframe>
+            </div>
+
+
+        </div>
+
+
+
+        <script src="script.js"></script>
+
+
+
+
+        <script type="module">
+            import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+          
+            const widget = await Chatbox.initBubble({
+              agentId: 'cm09ej6bx03mzvce65wxbz6cp',
+            });
+          
+            // open the chat bubble
+            widget.open();
+          
+            // close the chat bubble
+            widget.close()
+          
+            // or 
+            widget.toggle()
+          </script>
+
+    </body>
+</html>

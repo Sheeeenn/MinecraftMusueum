@@ -201,6 +201,7 @@ tr:hover {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin-bottom: 60px;
+    margin-right: 20px;
 }
 
 .chaindesk-unmain{
